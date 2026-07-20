@@ -1,12 +1,34 @@
-# React + Vite
+# Flowchart Project Management Prototype
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An interactive project-management interface that represents clients, documents, enquiries, and delivery stages as an expandable visual workflow.
 
-Currently, two official plugins are available:
+## What it demonstrates
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Hierarchical workflow modelling with React Flow
+- Expandable and collapsible project subtrees
+- Automatic node layout and viewport fitting
+- Custom nodes, animated edges, and navigation controls
+- Contextual document and client-enquiry sidebars
+- Responsive application shell and reusable UI components
 
-## Expanding the ESLint configuration
+## Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+React 19, TypeScript, React Flow, Tailwind CSS, Framer Motion, Axios and Vite.
+
+## Run locally
+
+```bash
+cp .env.example .env
+npm ci
+npm run dev
+```
+
+Create a production build with `npm run build`.
+
+## Configuration
+
+`VITE_API_BASE_URL` controls the optional backend endpoint. The current prototype uses mock workflow data, so the main interface can be explored without a running API.
+
+## Project status
+
+This is a product-interface prototype created to explore a non-traditional, flowchart-driven approach to technical project management. Authentication and form persistence are intentionally represented at prototype level.
